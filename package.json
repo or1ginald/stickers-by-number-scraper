@@ -1,0 +1,13 @@
+{
+  "name": "stickers-by-number-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node src/scrape-stickers.js"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  },
+  "packageManager": "pnpm@10.10.0"
+}
