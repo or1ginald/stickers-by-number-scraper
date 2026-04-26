@@ -15,6 +15,12 @@ pnpm exec playwright install chromium
 pnpm scrape -- --max-id=100
 ```
 
+The browser opens in headed mode by default. Use `--headless` for background runs:
+
+```bash
+pnpm scrape -- --max-id=100 --headless
+```
+
 The script writes JSON to `output/stickers.json`.
 
 You can change the limit:

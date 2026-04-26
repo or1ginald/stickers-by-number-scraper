@@ -14,7 +14,7 @@ function parseArgs() {
   const options = {
     maxId: DEFAULT_MAX_ID,
     output: path.join(projectRoot, 'output', 'stickers.json'),
-    headless: true
+    headless: false
   };
 
   for (const arg of args) {
@@ -36,6 +36,10 @@ function parseArgs() {
 
     if (key === '--headed') {
       options.headless = false;
+    }
+
+    if (key === '--headless') {
+      options.headless = true;
     }
   }
 
