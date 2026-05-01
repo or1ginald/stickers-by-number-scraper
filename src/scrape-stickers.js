@@ -4,7 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SITE_URL = 'https://www.voxelguy.fr/stickersbynumber/';
-const DEFAULT_MAX_ID = 100;
+const DEFAULT_MAX_ID = Infinity;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '..');
